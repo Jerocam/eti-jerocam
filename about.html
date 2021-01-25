@@ -34,13 +34,19 @@
   <!-- Navbar brand -->
   <a class="navbar-brand" href="index.html"><img src="images/editedeti.png" alt="logoETI"></a>
 
+  <!-- Collapse button when the screen is becoming smaller -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <!-- Links -->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">HOME</a>
+        <a class="nav-link " href="index.html">HOME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about.html">ABOUT ETI</a>
+        <a class="nav-link active" href="about.html">ABOUT ETI</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="students.html">STUDENTS</a>
@@ -50,7 +56,8 @@
       </li>
     </ul>
     <!-- phone -->
-    <span class="binfo"><i class="fas fa-mobile-alt phone"></i> 619-338-4967</span>
+    <span class="binfo"><p><i class="fas fa-mobile-alt phone"></i> 619-338-4967</p></span>
+  </div>
 
 </nav>
 
@@ -79,7 +86,7 @@
 <section class="details-card">
 <div class="container">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-sm-12 col-md-4 mb-2">
       <!-- Button trigger modal -->
         <button type="button" class="btn waves-effect btn-lg btn-block text-white btnfaqs1" data-toggle="modal" data-target="#exampleModal">
           <i class="fas fa-file-signature"></i> What is contract education?
@@ -107,7 +114,7 @@
           </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-sm-12 col-md-4 mb-2">
       <button type="button" class="btn text-white btnfaqs2 waves-effect btn-lg btn-block" data-toggle="modal" data-target="#exampleModal2"><i class="fas fa-donate"></i> What is Fee-Based Education?</button>
          <!-- Modal -->
          <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -131,7 +138,7 @@
           </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-sm-12 col-md-4">
       <button type="button" class="btn text-white btnfaqs3 waves-effect btn-lg btn-block" data-toggle="modal" data-target="#exampleModal3"><i class="fas fa-hands-helping"></i> Why Partner With ETI?</button>
          <!-- Modal -->
          <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -209,7 +216,7 @@
       <!-- Grid column -->
       <div class="col-md-3 mb-md-0 mb-3">
         <h5 class="text-uppercase smedia text-info">social media</h5>
-            <div class="mb-5 d-flex justify-content-start">
+            <div class="mb-5">
               <!-- Facebook -->
               <a class="fb-ic">
                 <i class="fab fa-facebook-f fa-md white-text mr-md-4 mr-3 fa-2x"> </i>

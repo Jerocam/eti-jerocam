@@ -3,6 +3,10 @@
     font-size: 1.4em;
 }
 
+.active{
+    color: rgb(6, 165, 228) !important;
+}
+
 .nav-link:hover{
     color: rgb(6, 165, 228) !important;
     opacity: 1;

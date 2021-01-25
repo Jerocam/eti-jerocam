@@ -37,7 +37,7 @@
 <body>
 
 <!-- Alert Box for GitHub-->
- <div class="alert alert-primary text-center" role="alert">
+ <div class="alert alert-primary text-center m-3" role="alert">
   <h5>Click<a href="https://github.com/Jerocam/eti-jerocam" class="alert-link"> the link </a>to get the source code from GitHub.</h5> 
  </div>
 	
@@ -47,10 +47,16 @@
   <!-- Navbar brand -->
   <a class="navbar-brand" href="index.html"><img src="images/editedeti.png" alt="logoETI"></a>
 
+  <!-- Collapse button when the screen is becoming smaller -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <!-- Links -->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">HOME</a>
+        <a class="nav-link active" href="index.html">HOME<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="about.html">ABOUT ETI</a>
@@ -63,18 +69,19 @@
       </li>
     </ul>
     <!-- phone -->
-    <span class="binfo"><i class="fas fa-mobile-alt phone"></i> 619-338-4967</span>
+    <span class="binfo"><p><i class="fas fa-mobile-alt phone"></i> 619-338-4967</p></span>
+  </div>
 
 </nav>
 
 <!--Welcome ETI-->
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-5 welspace text-white weltitle unique-color">
+    <div class="col-md-12 col-lg-5 welspace text-white weltitle unique-color">
       <h1>Welcome To The Employee Training Institute</h1>
       <h2>Why Choose ETI? We Prepare and Plan For The Future!</h2>
     </div>
-    <div class="col-md-7 welspace">
+    <div class="col-md-12 col-lg-7 welspace">
       <div id="carouselExampleFade" class="carousel slide carousel-fade cphotos" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -117,16 +124,18 @@
 <!--Video Intro-->
 <div class="container-fluid homespace2 bgvideo" id="section2">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="embed-responsive embed-responsive-16by9 z-depth-1">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EU-RagM1J9w" allowfullscreen></iframe>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-12 col-md-12 col-lg-6">
               <h1>Employee Training Institute Introduction</h1>
               <h4>San Diego Community Colleges District’s Employee Training Institute (ETI) provides fee-based education and contract education programs to the San Diego region and beyond, with the goal of empowering students and the business community to earn degrees and skills certificates within many local industries.
               </h4>
-              <button type="button" class="btn elegant-color-dark text-white btn-lg"><a class="text-white" href="about.html">Read More</a> </button>
+              <div class="pt-3 tcenter">
+                <button type="button" class="btn elegant-color-dark text-white btn-lg"><a class="text-white" href="about.html">Read More</a></button>
+              </div>
           </div>
         </div>
 </div>
@@ -136,7 +145,7 @@
 <div class="container-fluid homespace">
   <h1>CHOOSE YOUR PROFESSION</h1>
       <div class="row">
-        <div class="col-md-6 prof">
+        <div class="col-md-6 prof mb-3">
           <div class="container studentscont ">
             <img src="images/fstudents.png" alt="" class="imgprof z-depth-1-half">
             <div class="middle2">
@@ -241,8 +250,8 @@
 
       <!-- Grid column -->
       <div class="col-md-3 mb-md-0 mb-3">
-        <h5 class="text-uppercase smedia text-info">social media</h5>
-            <div class="mb-5 d-flex justify-content-start">
+        <h5 class="text-uppercase smedia text-info mb-3">social media</h5>
+            <div class="mb-5">
               <!-- Facebook -->
               <a class="fb-ic">
                 <i class="fab fa-facebook-f fa-md white-text mr-md-4 mr-3 fa-2x"> </i>
